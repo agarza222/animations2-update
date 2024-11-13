@@ -1,0 +1,80 @@
+@use './colors';
+@use './typography';
+
+body {
+  max-width: 1024px;
+}
+.hero {
+  position: relative;
+}
+.banner {
+  margin: 0;
+}
+.banner-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0,0,0, 0.55);
+  padding: 1em 0;
+  h2 {
+    font-size: 48px;
+    font-weight: normal;
+    margin: 0;
+  }
+  h3 {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: typography.$heading_primary_font;
+  }
+}
+.menu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.thumbnails {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  figure {
+    img {
+      border-radius: 7px;
+    }
+  }
+}
+.discover-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  p {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 0;
+  }
+  h2 {
+    font-weight: normal;
+    font-size: 48px;
+    margin: 0;
+  }
+  h3 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 36px;
+    margin: 0;
+  }
+  figure {
+    img {
+      height: 22px;
+    }
+  }
+  a {
+    text-transform: uppercase;
+    font-family: typography.$heading_tertiary_font;
+    color: colors.$secondary-color;
+  }
+}
