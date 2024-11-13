@@ -34,6 +34,9 @@ body {
     font-family: typography.$heading_primary_font;
   }
 }
+.heading {
+  text-align: center;
+}
 .menu {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

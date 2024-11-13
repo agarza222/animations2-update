@@ -373,6 +373,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.heading {
+  text-align: center;
+}
+
 .menu {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
